@@ -1,0 +1,17 @@
+@mixin logo($type:$main-color-text,
+$second:$alternative-color-text){
+    display: block;
+    text-decoration: none;
+
+
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $type;
+
+        &__second{
+            color: $second;
+        }
+}

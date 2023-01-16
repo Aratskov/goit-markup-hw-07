@@ -1,0 +1,13 @@
+@import "../mixins/logo";
+
+.logo{
+    @include logo;
+}
+
+.logo-footer{
+    @include logo($alternative-color-text,$white-color-text);
+    
+    margin-bottom: 20px;
+   
+}
+

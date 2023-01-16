@@ -1,0 +1,31 @@
+@mixin social($type:transparent,$color:$icon-color){
+    display: flex;
+    gap: 10px;
+
+    &__item{
+        width: 44px;
+        height: 44px;
+    }
+
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;    
+        border-radius: 50%;
+        background-color:$type;
+        color: $color;
+
+    
+        &:hover,&:focus{
+            background-color: $alternative-color-text;
+        }
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+}

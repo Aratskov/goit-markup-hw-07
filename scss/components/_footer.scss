@@ -1,0 +1,92 @@
+@import "../mixins/social";
+
+.footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 0;
+    background-color: $background-footer;
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
+.address__link{
+    text-decoration: none;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: $white-color-text;
+
+        &--contact{
+            color: rgba(255, 255, 255, 0.6);
+            transition: color $cubik;
+
+            &:hover,&:focus{
+                color:$alternative-color-text;
+            }
+        }
+}
+
+
+.social-wrap{
+    margin-right: 93px;
+    margin-left: 70px;
+}
+
+.social-wrap-title{
+    @extend %footer;
+}
+
+.social-footer{
+  @include social(rgba(255, 255, 255, 0.1),$white-color-text);
+    margin-top: 20px;
+
+    &__link{
+        transition: background-color $cubik;
+    }
+}
+
+.form-sing-title{
+    @extend %footer;
+}
+
+.form-footer{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+
+        &__input{
+            width: 358px;
+            height: 50px;
+            padding: 15px 0 15px 16px;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            outline: none;
+
+            background-color: transparent;
+            color: $white-color-text;
+        }
+}
+
+.button-sign{
+    @extend %btn;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+        &__icon{
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+}
