@@ -1,0 +1,148 @@
+
+.form-title{
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form__field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & + &{
+        margin-top: 10px;
+    }
+
+}
+
+
+
+.form__label{
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form__input{
+    padding-left: 42px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+    transition: border-color $cubik,
+    color 2500ms linear;
+
+    &:focus{
+        border-color: $alternative-color-text;
+    }
+}
+
+.form__icon{
+    position: absolute;
+    fill: currentColor;
+    bottom: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+
+    .form__input:focus + &{
+        color:$alternative-color-text;
+    }
+}
+
+.form__comment{
+    resize: none;
+
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+    fill: currentColor;
+
+    cursor: pointer;
+
+    transition: border-color $cubik;
+
+    &::placeholder{
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus{
+        border-color: $alternative-color-text;
+    }
+
+}
+
+.agreement{
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &__icon{
+        margin-right: 7px;
+        opacity:0;
+    }
+
+}
+
+
+.agreement__checkbox{
+    appearance: none;
+    // visibility: hidden;
+
+    &::after{
+        content:" ";
+        position: absolute;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        opacity: 0;
+    }
+
+    &:not(:checked)::after{
+        opacity: 1;
+    }
+
+    &:checked + .agreement__icon{
+        opacity: 1;
+    }
+}
+
+.agreement__link{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:$second-color-text;
+
+        &--contract{
+            color: $alternative-color-text;
+        }
+}
+
+.form__button{
+    @extend %btn;
+     
+    display: block;
+    min-width: 200px;
+    margin: 0 auto;
+}

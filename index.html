@@ -77,61 +77,61 @@
 
             <!-- FORM MODAL -->
 
-            <p class="strong-title"
+            <p class="form-title"
               >Залиште свої дані, ми вам передзвонимо</p
             >
             <form class="form" autocomplete="off">
 
-              <label class="field-form">
-                <span class="form-label">Ім'я</span>
-                <input type="text" class="form-input" name="name" />
-                <svg class="form-icon">
+              <label class="form__field">
+                <span class="form__label">Ім'я</span>
+                <input type="text" class="form__input" name="name" />
+                <svg class="form__icon">
                   <use href="./images/sprite.svg#name"></use>
                 </svg>
               </label>
 
-              <label class="field-form">
-                <span class="form-label">Телефон</span>
-                <input type="tel" class="form-input" name="tel" />
-                <svg class="form-icon">
+              <label class="form__field">
+                <span class="form__label">Телефон</span>
+                <input type="tel" class="form__input" name="tel" />
+                <svg class="form__icon">
                   <use href="./images/sprite.svg#phone"></use>
                 </svg>
               </label>
 
-              <label class="field-form">
-                <span class="form-label">Пошта</span>
-                <input type="email" class="form-input" name="email" />
-                <svg class="form-icon">
+              <label class="form__field">
+                <span class="form__label">Пошта</span>
+                <input type="email" class="form__input" name="email" />
+                <svg class="form__icon">
                   <use href="./images/sprite.svg#email"></use>
                 </svg>
               </label>
 
-              <label class="field-form">
-                <span class="form-label">Коментар</span>
+              <label class="form__field">
+                <span class="form__label">Коментар</span>
                 <textarea
                   name="comment"
-                  class="comment"
+                  class="form__comment"
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
 
-              <label class="field-ugoda">
+              <label class="agreement">
                 <input
                   type="checkbox"
                   name="checkbox"
                   value="check"
-                  class="checkbox"
+                  class="agreement__checkbox"
                 />
-                <svg class="form-icon-ugoda">
+                <svg class="agreement__icon" width="16" height="15">
                   <use href="./images/sprite.svg#check"></use>
                 </svg>
-                <span class="form-ugoda"
+                <span class="agreement__link"
                   >Погоджуюся з розсилкою та приймаю
-                  <a href="" class="">Умови договору</a></span
+                  <a href="" class="agreement__link--contract">Умови договору</a></span
                 >
               </label>
 
-              <button type="submit" class="button-send">Відправити</button>
+              <button type="submit" class="form__button">Відправити</button>
             </form>
           </div>
         </div> 
