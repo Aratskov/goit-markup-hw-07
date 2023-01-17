@@ -5,7 +5,7 @@
 }
 
 .logo-footer{
-    @include logo($alternative-color-text,$white-color-text);
+    @include logo($white-color-text);
     
     margin-bottom: 20px;
    

@@ -21,6 +21,7 @@
 
     transition: background-color $cubik,
     color $cubik;
+    cursor: pointer;
 
     &:hover,&:focus{
         color:$white-color-text;

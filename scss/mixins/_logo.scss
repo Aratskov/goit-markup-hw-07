@@ -1,5 +1,4 @@
-@mixin logo($type:$main-color-text,
-$second:$alternative-color-text){
+@mixin logo($type:$main-color-text){
     display: block;
     text-decoration: none;
 
@@ -9,9 +8,9 @@ $second:$alternative-color-text){
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: $type;
+    color: $alternative-color-text;
 
         &__second{
-            color: $second;
+            color: $type;
         }
 }

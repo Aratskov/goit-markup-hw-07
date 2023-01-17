@@ -33,6 +33,12 @@
         }
 }
 
+.address__item{
+
+    &+&{
+        margin-top: 9px;
+    }
+}
 
 .social-wrap{
     margin-right: 93px;
