@@ -100,6 +100,7 @@
     &__icon{
         margin-right: 7px;
         opacity:0;
+        cursor: pointer;
     }
 
 }
@@ -133,6 +134,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:$second-color-text;
+    cursor: pointer;
 
         &--contract{
             color: $alternative-color-text;
